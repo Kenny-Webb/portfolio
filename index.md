@@ -6,14 +6,14 @@ title: GIS Portfolio
 <style>
   :root {
     color-scheme: dark;
-    --background: #121414;
-    --surface: #191c1c;
-    --surface-hover: #202424;
-    --text: #e7e9e9;
-    --muted: #b8bebe;
-    --border: #363c3c;
-    --accent: #6fb7b1;
-    --accent-light: #9bd2cd;
+    --background: #121212;
+    --surface: #1a1a1a;
+    --surface-hover: #202020;
+    --text: #e8e8e8;
+    --muted: #bdbdbd;
+    --border: #383838;
+    --accent: #86a8c7;
+    --accent-light: #b4cbe0;
   }
 
   * {
@@ -31,28 +31,6 @@ title: GIS Portfolio
     font-family: Calibri, "Segoe UI", Arial, sans-serif;
   }
 
-  /* Hide Minima's default header */
-  .site-header {
-    display: none;
-  }
-
-  .site-footer {
-    background: var(--surface);
-    border-color: var(--border);
-    color: var(--muted);
-  }
-
-  .wrapper {
-    width: 92%;
-    max-width: 1400px;
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-
-  .page-content {
-    padding-top: 0;
-  }
-
   a {
     color: var(--accent);
   }
@@ -65,6 +43,23 @@ title: GIS Portfolio
   .project-card:focus-visible {
     outline: 3px solid var(--accent);
     outline-offset: 4px;
+  }
+
+  /* Hide Minima's default header and footer */
+  .site-header,
+  .site-footer {
+    display: none;
+  }
+
+  .wrapper {
+    width: 92%;
+    max-width: 1400px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .page-content {
+    padding-top: 0;
   }
 
   .skip-link {
@@ -82,10 +77,10 @@ title: GIS Portfolio
     top: 20px;
   }
 
-  /* Top navigation */
+  /* Simple Minima-style navigation */
   .portfolio-nav {
     border-bottom: 1px solid var(--border);
-    background: var(--surface);
+    background: var(--background);
   }
 
   .portfolio-nav-inner {
@@ -94,15 +89,16 @@ title: GIS Portfolio
     justify-content: space-between;
     width: 92%;
     max-width: 1400px;
-    min-height: 68px;
+    min-height: 58px;
     margin: 0 auto;
     padding: 0 20px;
   }
 
   .portfolio-title {
-    color: #ffffff;
+    color: var(--text);
     font-size: 1.25rem;
-    font-weight: 700;
+    font-weight: 400;
+    letter-spacing: -0.3px;
     text-decoration: none;
   }
 
@@ -113,16 +109,19 @@ title: GIS Portfolio
 
   .nav-links {
     display: flex;
-    align-items: center;
     gap: 24px;
   }
 
   .nav-links a {
-    font-weight: 600;
+    color: var(--muted);
     text-decoration: none;
   }
 
-  /* Main sections */
+  .nav-links a:hover {
+    color: var(--accent-light);
+  }
+
+  /* Main layout */
   .portfolio-main {
     width: 92%;
     max-width: 1400px;
@@ -173,7 +172,7 @@ title: GIS Portfolio
     display: block;
     overflow: hidden;
     border: 1px solid var(--border);
-    border-radius: 5px;
+    border-radius: 4px;
     background: var(--surface);
     color: inherit;
     text-decoration: none;
@@ -191,7 +190,7 @@ title: GIS Portfolio
     aspect-ratio: 1 / 1;
     margin: 0;
     object-fit: cover;
-    background: #242828;
+    background: #242424;
   }
 
   .project-card-text {
@@ -200,6 +199,7 @@ title: GIS Portfolio
 
   .project-card h3 {
     margin: 0 0 10px;
+    color: #ffffff;
     font-size: 1.35rem;
   }
 
@@ -273,6 +273,32 @@ title: GIS Portfolio
     margin-top: 35px;
   }
 
+  /* Useful footer */
+  .portfolio-footer {
+    border-top: 1px solid var(--border);
+  }
+
+  .portfolio-footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 92%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 20px;
+  }
+
+  .footer-links a {
+    text-decoration: none;
+  }
+
   @media screen and (max-width: 900px) {
     .project-grid {
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -281,7 +307,8 @@ title: GIS Portfolio
 
   @media screen and (max-width: 600px) {
     .portfolio-nav-inner,
-    .portfolio-main {
+    .portfolio-main,
+    .portfolio-footer-inner {
       width: 94%;
       padding-right: 10px;
       padding-left: 10px;
@@ -306,6 +333,12 @@ title: GIS Portfolio
 
     .section {
       padding: 45px 0;
+    }
+
+    .portfolio-footer-inner {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 12px;
     }
   }
 
@@ -552,3 +585,25 @@ title: GIS Portfolio
   </section>
 
 </main>
+
+<footer class="portfolio-footer">
+  <div class="portfolio-footer-inner">
+
+    <span>Your Name — GIS Portfolio</span>
+
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/your-linkedin-name">
+        LinkedIn
+      </a>
+
+      <a href="mailto:your-email@example.com">
+        Email
+      </a>
+
+      <a href="https://github.com/your-github-username">
+        GitHub
+      </a>
+    </div>
+
+  </div>
+</footer>
