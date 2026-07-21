@@ -1,4 +1,4 @@
-```html
+
 ---
 layout: default
 title: GIS Portfolio
