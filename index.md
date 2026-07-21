@@ -33,7 +33,7 @@ I am a GIS student interested in spatial analysis, cartography and geographic da
 
 Write a short introduction explaining the question you investigated.
 
-![Main map from Project One]({{ '/BlackImage.jpg' | relative_url }})
+![Main map from Project One]({{ '/BlackImage.png' | relative_url }})
 
 ### Methods
 
@@ -55,7 +55,7 @@ Explain what you found and what the map demonstrates.
 
 Write a short introduction explaining the project.
 
-![Main map from Project Two]({{ '/Blackimage2.jpg' | relative_url }})
+![Main map from Project Two]({{ '/Blackimage2.png' | relative_url }})
 
 ### Methods
 
