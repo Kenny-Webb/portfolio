@@ -1,3 +1,4 @@
+```html
 ---
 layout: default
 title: GIS Portfolio
@@ -25,7 +26,6 @@ title: GIS Portfolio
   }
 
   body {
-    margin: 0;
     background: var(--background);
     color: var(--text);
     font-family: Calibri, "Segoe UI", Arial, sans-serif;
@@ -45,12 +45,6 @@ title: GIS Portfolio
     outline-offset: 4px;
   }
 
-  /* Hide Minima's default header and footer */
-  .site-header,
-  .site-footer {
-    display: none;
-  }
-
   .wrapper {
     width: 92%;
     max-width: 1400px;
@@ -60,6 +54,28 @@ title: GIS Portfolio
 
   .page-content {
     padding-top: 0;
+  }
+
+  .site-header,
+  .site-footer {
+    background: var(--background);
+    border-color: var(--border);
+  }
+
+  .site-title,
+  .site-title:visited {
+    color: var(--text);
+  }
+
+  .site-title:hover {
+    color: var(--accent-light);
+    text-decoration: none;
+  }
+
+  .page-link,
+  .footer-col,
+  .footer-heading {
+    color: var(--muted);
   }
 
   .skip-link {
@@ -75,58 +91,6 @@ title: GIS Portfolio
 
   .skip-link:focus {
     top: 20px;
-  }
-
-  /* Simple Minima-style navigation */
-  .portfolio-nav {
-    border-bottom: 1px solid var(--border);
-    background: var(--background);
-  }
-
-  .portfolio-nav-inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 92%;
-    max-width: 1400px;
-    min-height: 58px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-
-  .portfolio-title {
-    color: var(--text);
-    font-size: 1.25rem;
-    font-weight: 400;
-    letter-spacing: -0.3px;
-    text-decoration: none;
-  }
-
-  .portfolio-title:hover {
-    color: var(--accent-light);
-    text-decoration: none;
-  }
-
-  .nav-links {
-    display: flex;
-    gap: 24px;
-  }
-
-  .nav-links a {
-    color: var(--muted);
-    text-decoration: none;
-  }
-
-  .nav-links a:hover {
-    color: var(--accent-light);
-  }
-
-  /* Main layout */
-  .portfolio-main {
-    width: 92%;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 20px;
   }
 
   .section {
@@ -160,7 +124,6 @@ title: GIS Portfolio
     margin-bottom: 0;
   }
 
-  /* Project grid */
   .project-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -208,7 +171,6 @@ title: GIS Portfolio
     color: var(--muted);
   }
 
-  /* Project tags */
   .project-tags {
     display: flex;
     flex-wrap: wrap;
@@ -224,7 +186,6 @@ title: GIS Portfolio
     font-size: 0.82rem;
   }
 
-  /* Detailed project sections */
   .project-detail {
     padding: 75px 0;
     border-bottom: 1px solid var(--border);
@@ -273,32 +234,6 @@ title: GIS Portfolio
     margin-top: 35px;
   }
 
-  /* Useful footer */
-  .portfolio-footer {
-    border-top: 1px solid var(--border);
-  }
-
-  .portfolio-footer-inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 92%;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 30px 20px;
-    color: var(--muted);
-    font-size: 0.95rem;
-  }
-
-  .footer-links {
-    display: flex;
-    gap: 20px;
-  }
-
-  .footer-links a {
-    text-decoration: none;
-  }
-
   @media screen and (max-width: 900px) {
     .project-grid {
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -306,25 +241,10 @@ title: GIS Portfolio
   }
 
   @media screen and (max-width: 600px) {
-    .portfolio-nav-inner,
-    .portfolio-main,
-    .portfolio-footer-inner {
+    .wrapper {
       width: 94%;
       padding-right: 10px;
       padding-left: 10px;
-    }
-
-    .portfolio-nav-inner {
-      align-items: flex-start;
-      flex-direction: column;
-      justify-content: center;
-      gap: 8px;
-      padding-top: 14px;
-      padding-bottom: 14px;
-    }
-
-    .nav-links {
-      gap: 18px;
     }
 
     .project-grid {
@@ -333,12 +253,6 @@ title: GIS Portfolio
 
     .section {
       padding: 45px 0;
-    }
-
-    .portfolio-footer-inner {
-      align-items: flex-start;
-      flex-direction: column;
-      gap: 12px;
     }
   }
 
@@ -351,27 +265,7 @@ title: GIS Portfolio
 
 <a class="skip-link" href="#main-content">Skip to main content</a>
 
-<nav class="portfolio-nav" aria-label="Main navigation">
-  <div class="portfolio-nav-inner">
-
-    <a class="portfolio-title" href="#main-content">
-      Your Name — GIS Portfolio
-    </a>
-
-    <div class="nav-links">
-      <a href="https://www.linkedin.com/in/your-linkedin-name">
-        LinkedIn
-      </a>
-
-      <a href="mailto:your-email@example.com">
-        Email
-      </a>
-    </div>
-
-  </div>
-</nav>
-
-<main class="portfolio-main" id="main-content">
+<main id="main-content">
 
   <section class="section" aria-labelledby="about-heading">
     <h1 id="about-heading">About</h1>
@@ -585,25 +479,4 @@ title: GIS Portfolio
   </section>
 
 </main>
-
-<footer class="portfolio-footer">
-  <div class="portfolio-footer-inner">
-
-    <span>Your Name — GIS Portfolio</span>
-
-    <div class="footer-links">
-      <a href="https://www.linkedin.com/in/your-linkedin-name">
-        LinkedIn
-      </a>
-
-      <a href="mailto:your-email@example.com">
-        Email
-      </a>
-
-      <a href="https://github.com/your-github-username">
-        GitHub
-      </a>
-    </div>
-
-  </div>
-</footer>
+```
