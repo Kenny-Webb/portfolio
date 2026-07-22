@@ -286,7 +286,7 @@ title: GIS Portfolio
     <div class="container nav-inner">
 
       <a class="site-name" href="#top">
-        Your Name — Portfolio
+        Kenny Webb — Portfolio
       </a>
 
       <div class="nav-links">
@@ -409,7 +409,7 @@ title: GIS Portfolio
 
       <p class="tools-line">
         <strong>Tools and techniques:</strong>
-        ArcGIS Pro, ArcPy, Forest-based regression, Spatial data cleaning and management  
+        ArcGIS Pro, ArcPy, Forest-based regression, Spatial data cleaning and management.
       </p>
 
       <img
@@ -419,16 +419,35 @@ title: GIS Portfolio
       <h3>Data and methods</h3>
 
       <p>
-        Explain the datasets, GIS software and analytical methods used.
-        Describe how the final result was produced.
-      </p>
+        Council-managed trees were combined with NDVI and NDMI calculated from Sentinel-2 imagary, Landsat 9 land surface 
+        temperature, Copernicus elevation data and Edinburgh greenspace location data. Variables were aggregated to 6,500+
+        four-hectare hexagons using ArcPy. 
 
+        Forest-based regression models compared an environmental baseline of NDVI, NDMI, elevation and greenspace area with
+        models including tree density, canopy coverage and maturity. 
+      </p>
+      
+      <img
+        src="{{ '/assets/images/BlackImage.png' | relative_url }}"
+        alt="Describe the final map and the geographic information it displays">
+      
       <h3>Results</h3>
 
       <p>
-        Explain the main findings, important spatial patterns and what
-        the map demonstrates.
+        The baseline model explained 72.0% of temperature variation. Adding tree density alone reduced performance, while adding 
+        canopy cover and maturity produced the highest validation R-squared of 0.726. 
+
+        Elevation, NDMI and NDVI remained the strongest predictors. Canopy coverage added modest predictive value and was more 
+        informative than tree density or maturity. 
       </p>
+
+            <img
+        src="{{ '/assets/images/BlackImage.png' | relative_url }}"
+        alt="Describe the final map and the geographic information it displays">
+
+            <img
+        src="{{ '/assets/images/BlackImage.png' | relative_url }}"
+        alt="Describe the final map and the geographic information it displays">
 
       <p class="return-link">
         <a href="#projects-heading">Return to projects</a>
@@ -524,7 +543,7 @@ title: GIS Portfolio
   <footer class="site-footer">
     <div class="container footer-inner">
 
-      <span>Your Name — Portfolio</span>
+      <span>Kenny Webb — Portfolio</span>
 
       <div class="footer-links">
         <a href="www.linkedin.com/in/kennywebb">
