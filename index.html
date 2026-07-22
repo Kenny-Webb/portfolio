@@ -355,16 +355,18 @@ title: GIS Portfolio
             alt="Describe the map shown for Project Two">
 
           <div class="project-card-content">
-            <h3>Project Two</h3>
+            <h3>Walking Access to Public Bins on Edinburgh's Core Paths</h3>
 
             <p>
-              A concise description of the project's purpose and main outcome.
+              An assessment of how easily walkers on Edinburgh's core path network can reach a public bin on foot. 
+              Core paths are routes identified by the Scottish government to support public access, but has the government
+              done a sufficient job at providing bins at regular intervals? 
             </p>
 
             <div class="project-tags">
               <span>ArcGIS Pro</span>
-              <span>Data visualisation</span>
-              <span>GIS analysis</span>
+              <span>Network Analysis</span>
+              <span>Python Data Visualisation</span>
             </div>
           </div>
         </a>
@@ -393,7 +395,7 @@ title: GIS Portfolio
     </section>
 
     <section class="project-detail" id="project-one">
-      <h2>Project One</h2>
+      <h2>Mapping Urban Heat and Tree Canopy in Edinburgh</h2>
 
       <div class="project-tags">
         <span>ArcPy</span>
@@ -449,18 +451,26 @@ title: GIS Portfolio
         src="{{ '/assets/images/model_validation_comparison.png' | relative_url }}"
         alt="Describe the final map and the geographic information it displays">
 
+      <p>
+        Data credits: City of Edinburgh Council; USGS Landsat 9; Copernicus Sentinel-2; Copernicus DEM. Council data
+        reused under Open Government Licence. 
+      </p>
+      
+
+
+      
       <p class="return-link">
         <a href="#projects-heading">Return to projects</a>
       </p>
     </section>
 
     <section class="project-detail" id="project-two">
-      <h2>Project Two</h2>
+      <h2>Walking Access to Public Bins on Edinburgh’s Core Paths</h2>
 
       <div class="project-tags">
+        <span>Network Analysis</span>
         <span>ArcGIS Pro</span>
-        <span>Data visualisation</span>
-        <span>GIS analysis</span>
+        <span>Python Data Visualisation</span>
       </div>
 
       <p>
@@ -470,7 +480,7 @@ title: GIS Portfolio
 
       <p class="tools-line">
         <strong>Tools and techniques:</strong>
-        ArcGIS Pro, GIS analysis and data visualisation.
+        ArcGIS Pro, network analysis, cartography, geospatial data cleaning and management, python visualisation.  
       </p>
 
       <img
@@ -480,18 +490,33 @@ title: GIS Portfolio
       <h3>Data and methods</h3>
 
       <p>
-        Explain the datasets, GIS software and analytical methods used.
-        Describe how the final result was produced.
+        Sections were classified into 0-5 minutes, 5-15 minutes and 15+ minutes based on their relative walking 
+        time to the nearest public bin, assuming a walking speed of 4.8 km/h. Only bins 30 metres from the path were
+        treated as accessible.
       </p>
-
+      
+      <img
+        src="{{ '/assets/images/BlackImage2.png' | relative_url }}"
+        alt="Describe the final map and the geographic information it displays">
+      
       <h3>Results</h3>
 
       <p>
-        Explain the main findings, important spatial patterns and what
-        the map demonstrates.
+        The analysis revealed clear variation in access to public bins. Coverage was strongest in central and 
+        adjacent wards, with over 79% of core paths in Leith, Leith Walk, Forth, City Centre and Inverleith 
+        located within a five-minute walk of a bin. Less densely populated wards further out generally had poorer
+        bin accessability. In the Pentland Hills, 90* of core paths were over 15 minutes from the nearest accessible bin.
       </p>
 
+      <p>
+        Data credits: All data was sourced from the City of Edinburgh Council, used under the Open Government License. 
+      </p>
+
+
+
+      
       <p class="return-link">
+        
         <a href="#projects-heading">Return to projects</a>
       </p>
     </section>
